@@ -1,0 +1,4 @@
+format:
+  - short-title
+  - title-length=255
+tags:
