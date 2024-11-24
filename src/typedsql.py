@@ -16,3 +16,12 @@ class Sql(Generic[A, R]):
     def __init__(self, connection: Connection) -> None: ...
 
     def __call__(self, args: A) -> R: ...
+
+
+# @todo #1 Setup PostgreSQL in docker-compose project.
+
+# @todo #1 Setup PostgreSQL in github actions.
+
+# @todo #1 Setup MySQL in docker-compose project.
+
+# @todo #1 Setup MySQL in github actions.
