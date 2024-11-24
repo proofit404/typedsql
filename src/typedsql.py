@@ -114,3 +114,17 @@ class Sql(Generic[A, R]):
 # ~ So far I'm thinking that transaction management is not our
 # ~ business. I should read Django and SQLAlchemy internals to figure
 # ~ out all of this.
+
+# ~ @todo #13 Figure out template system.
+# ~ 
+# ~ So far we can choise between placeholders:
+# ~ 
+# ~ 1. jinja2.Template: {{ field }}
+# ~ 
+# ~ 2. string.Formatter: {field}
+# ~ 
+# ~ 3. string.Template: $field
+# ~ 
+# ~ Mostly this depends on how many external linters, formatters and
+# ~ pretty printers of SQL language would work with any of these
+# ~ approaches.
