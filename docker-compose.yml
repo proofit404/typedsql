@@ -1,0 +1,10 @@
+---
+services:
+  typedsql:
+    build: .
+    image: typedsql
+    volumes:
+      - .:/app
+      - user:/home/ubuntu/.cache
+volumes:
+  user:
