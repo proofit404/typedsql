@@ -5,4 +5,4 @@ set -o nounset
 set -o pipefail
 
 echo "==> Running pdd…"
-pdd --quiet --file /dev/stdout --skip-gitignore
+pdd --quiet --file /dev/null --skip-gitignore

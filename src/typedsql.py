@@ -25,3 +25,6 @@ class Sql(Generic[A, R]):
 # @todo #1 Setup MySQL in docker-compose project.
 
 # @todo #1 Setup MySQL in github actions.
+
+# @todo #1 Fetch database roles.
+#  Add callable interface which could produce selected rows of concrete type.
