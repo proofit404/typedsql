@@ -80,3 +80,13 @@ class Sql(Generic[A, R]):
 # ~ >>> typedsql.guess_adapter(connection)
 # ~ AsyncpgAdapter()
 # ~ ```
+
+# @todo #14 Synchronous sqlite3 adapter.
+
+# @todo #14 Asynchronous sqlite3 adapter.
+
+# @todo #14 Synchronous psycopg3 adapter.
+
+# @todo #14 Asynchronous psycopg3 adapter.
+
+# @todo #14 Asynchronous asyncpg adapter.
