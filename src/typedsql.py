@@ -128,3 +128,7 @@ class Sql(Generic[A, R]):
 # ~ Mostly this depends on how many external linters, formatters and
 # ~ pretty printers of SQL language would work with any of these
 # ~ approaches.
+
+# @todo #13 Support string literal `Sql.query` attribute.
+
+# @todo #13 Support `pathlib.Path` `Sql.query` attribute.
