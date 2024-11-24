@@ -26,7 +26,7 @@ class Sql(Generic[A, R]):
 
 # @todo #1 Setup MySQL in github actions.
 
-# @todo #1 Fetch database rows.
+# ~ @todo #1 Fetch database rows.
 # ~ 
 # ~ Add callable interface which could produce selected rows of
 # ~ concrete type.
@@ -76,7 +76,7 @@ class Sql(Generic[A, R]):
 # ~ ```pycon
 # ~ >>> import asyncpg
 # ~ >>> import typedsql
-# ~ >>> connection = await asyncpg.connect(user='user', password='password', database='database', host='127.0.0.1')
+# ~ >>> connection = await asyncpg.connect(host='127.0.0.1')
 # ~ >>> typedsql.guess_adapter(connection)
 # ~ AsyncpgAdapter()
 # ~ ```
