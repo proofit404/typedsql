@@ -90,3 +90,27 @@ class Sql(Generic[A, R]):
 # @todo #14 Asynchronous psycopg3 adapter.
 
 # @todo #14 Asynchronous asyncpg adapter.
+
+# ~ @todo #1 Figure out what to do with transactions.
+# ~ 
+# ~ As always we have a lot choices how to organize transaction
+# ~ management.
+# ~ 
+# ~ The first option would be introduction of context management API. On
+# ~ one hand it's a simple API. On the other hand it requires a lot of
+# ~ work on adapters side. It's impossible to execute sequence of Sql
+# ~ objects inside same transaction. It requires synchronous and
+# ~ asynchronous versions of API.
+# ~ 
+# ~ Another option which requires documentation only is to allow people
+# ~ to write TRANSACTION BEGIN inside `query` attribute. This would
+# ~ work, but probably annecessary.
+# ~ 
+# ~ Sinse we decided not to own `asyncpg.Connection` objects, we could
+# ~ ask users to start transaction in their client code.  Clean
+# ~ Architecture and `stories` library has solution to the problem where
+# ~ to place this code.
+# ~ 
+# ~ So far I'm thinking that transaction management is not our
+# ~ business. I should read Django and SQLAlchemy internals to figure
+# ~ out all of this.
