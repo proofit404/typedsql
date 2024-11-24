@@ -36,7 +36,7 @@ class Sql(Generic[A, R]):
 # ~ Depending on result type is a collection or not we should use fetch
 # ~ or fetch all engine method under the hood.
 
-# ~ @todo #7 Engine objects.
+# ~ @todo #13 Adapters objects.
 # ~ 
 # ~ To my understanding we have to introduce `Engine`, `Connection`, or
 # ~ `Driver` objects. The main reiquirement for this architecture
